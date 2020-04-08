@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnShow = findViewById(R.id.btn_show);
 
         final TestDataBase testDataBase = new TestDataBase(MainActivity.this, "sam", null, 1);
-        
+
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

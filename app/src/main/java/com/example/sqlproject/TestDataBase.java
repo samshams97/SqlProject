@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class TestDataBase extends SQLiteOpenHelper {
-    String TABLE_NAME = "student.db";
+    String TABLE_NAME = "student";
 
     public TestDataBase(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
@@ -30,7 +30,7 @@ public class TestDataBase extends SQLiteOpenHelper {
 
     }
     public  void insetIntoDb(String name , String family,int grade){
-        String INSERT_INTO_DB = "INSERT INTO" +TABLE_NAME + "(name,family,grade) VALUES (" +
+        String INSERT_INTO_DB = "INSERT INTO " +TABLE_NAME + "(name,family,grade) VALUES (" +
               "'" + name + "'" + "," +
              "'" + family + "'" + "," +
                 grade
